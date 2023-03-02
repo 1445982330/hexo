@@ -1,0 +1,76 @@
+# 头像
+avatar: https://cong-picgo.oss-cn-shenzhen.aliyuncs.com/images/KC5.jpg
+
+# 背景
+home_background: 
+
+# ParticleX theme icon is adopts the font awesome 6
+# Link: https://fontawesome.com/search
+
+# 主菜单导航
+menu:
+    主页:
+        name: house
+        theme: solid
+        src: /
+    关于:
+        name: id-card
+        theme: solid
+        src: /about
+    归档:
+        name: box-archive
+        theme: solid
+        src: /archives
+    类别:
+        name: bookmark
+        theme: solid
+        src: /categories
+    标签:
+        name: tags
+        theme: solid
+        src: /tags
+    导航页:
+        name: bars
+        theme: solid
+        src: /blog
+
+
+# 主页信息卡片
+card:
+    enable: true
+    description:
+        - hello
+    icon_links:
+        github:
+            name: github
+            theme: brands
+            link: https://github.com/1445982330/
+        qq:
+            name: qq
+            theme: brands
+            link: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1445982330&website=www.oicqzone.com
+        bilibili:
+            name: bilibili
+            theme: brands
+            link: https://space.bilibili.com/70543500
+        # <name>:
+        #    name: <icon-name>
+        #    theme: <icon-theme>
+        #    link: <link-url>
+    friend_links:
+        友链: https://www.baidu.com/
+        # <name>: <link-url>
+
+# 页脚配置
+footer:
+    since: 2022
+    # Customize the server domain name ICP
+    ICP:
+        enable: false
+        code:
+        link:
+
+# Theme config
+search:
+    enable: true
+    path: /search.json
