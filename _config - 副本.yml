@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo Cong
+title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: Cong
+author: John Doe
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://pdcong.top
+url: http://example.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -29,7 +29,6 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-    - blog/**  # 跳过指定渲染，可用glob来匹配路径，表示blog文件里面的内容不会被站点渲染
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -45,7 +44,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -98,32 +97,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: particlex
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: 
-    git: git@103.151.216.112:/var/repo/hexo.git
-    github: git@github.com:1445982330/1445982330.github.io.git
-  branch: main
-
-# Site config
-search:
-    path: /search.json
-    optimize: true
-
-aplayer:
-  meting: true	# MetingJS 支持
-
-
-hexo-tag-dplayer:
-  cdn:
-    - https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js
-    - https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css
-  default: 
-    api: https://api.prprpr.me/dplayer/
-    loop: yes
-    screenshot: yes
-    # 后面还可以接着写其他默认配置
+  type: ''

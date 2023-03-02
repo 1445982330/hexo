@@ -13,15 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-<<<<<<< HEAD
-url: https://pdcong.top
-=======
-<<<<<<< HEAD
-url: https://pdcong.top
-=======
 url: http://example.com
->>>>>>> cfaff20 (2023/03/02)
->>>>>>> 5df1e00 (2023/03/02)
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -115,32 +107,3 @@ deploy:
   repo: 
     github: git@github.com:1445982330/1445982330.github.io.git,main
     git: git@103.151.216.112:/var/repo/hexo.git,master
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 5df1e00 (2023/03/02)
-
-# Site config
-search:
-    path: /search.json
-    optimize: true
-
-aplayer:
-  meting: true	# MetingJS 支持
-
-
-hexo-tag-dplayer:
-  cdn:
-    - https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js
-    - https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css
-  default: 
-    api: https://api.prprpr.me/dplayer/
-    loop: yes
-    screenshot: yes
-<<<<<<< HEAD
-    # 后面还可以接着写其他默认配置
-=======
-    # 后面还可以接着写其他默认配置
-=======
->>>>>>> cfaff20 (2023/03/02)
->>>>>>> 5df1e00 (2023/03/02)
