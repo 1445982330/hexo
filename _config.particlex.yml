@@ -1,46 +1,46 @@
 # 头像
-avatar: https://cong-picgo.oss-cn-shenzhen.aliyuncs.com/images/KC5.jpg
+avatar: http://wp.pdcong.top/s/bda19u
+
+# 标签图标
+favicon: /images/favicon.png
 
 # 背景
-home_background: 
-
-# ParticleX theme icon is adopts the font awesome 6
-# Link: https://fontawesome.com/search
+background:
+    - /images/background.jpg
 
 # 主菜单导航
 menu:
     主页:
         name: house
         theme: solid
-        src: /
+        link: /
     关于:
         name: id-card
         theme: solid
-        src: /about
+        link: /about
     归档:
         name: box-archive
         theme: solid
-        src: /archives
+        link: /archives
     类别:
         name: bookmark
         theme: solid
-        src: /categories
+        link: /categories
     标签:
         name: tags
         theme: solid
-        src: /tags
+        link: /tags
     导航页:
         name: bars
         theme: solid
-        src: /blog
-
+        link: /blog
 
 # 主页信息卡片
 card:
     enable: true
     description:
-        - hello
-    icon_links:
+        hello
+    iconLinks:
         github:
             name: github
             theme: brands
@@ -57,7 +57,7 @@ card:
         #    name: <icon-name>
         #    theme: <icon-theme>
         #    link: <link-url>
-    friend_links:
+    friendLinks:
         友链: https://www.baidu.com/
         # <name>: <link-url>
 
@@ -70,7 +70,5 @@ footer:
         code:
         link:
 
-# Theme config
 search:
     enable: true
-    path: /search.json
