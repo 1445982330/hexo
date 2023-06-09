@@ -30,6 +30,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
     - blog/**  # 跳过指定渲染，可用glob来匹配路径，表示blog文件里面的内容不会被站点渲染
+    - asmr/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
