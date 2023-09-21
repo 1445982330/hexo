@@ -105,8 +105,12 @@ theme: particlex
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: 
-    github: git@github.com:1445982330/1445982330.github.io.git,main
-    git: git@103.151.216.112:/var/repo/hexo.git,master
-    git: git@43.139.225.81:/var/repo/hexo.git,master
+- type: git
+  repo: git@github.com:1445982330/1445982330.github.io.git
+  branch: main
+- type: git
+  repo: git@103.151.216.112:/var/repo/hexo.git
+  branch: master
+- type: git
+  repo: git@43.139.225.81:/var/repo/hexo.git
+  branch: master
