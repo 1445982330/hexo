@@ -1,12 +1,12 @@
 # 头像
-avatar: https://wp.pdcong.top/s/iv2fv2
-
-# 标签图标
-favicon: https://wp.pdcong.top/s/iv2fv2
+avatar: https://wp.pdcong.top/f/7O1C1/icon1.jpg
 
 # 背景
 background:
     - /images/background.jpg
+
+# 加载动画
+loading: /images/loading.gif
 
 # 主菜单导航
 menu:
@@ -66,9 +66,9 @@ footer:
     since: 2022
     # Customize the server domain name ICP
     ICP:
-        enable: false
-        code:
-        link:
+        enable: true
+        code: 粤ICP备2023129249号
+        link: https://beian.miit.gov.cn
 
 search:
     enable: true

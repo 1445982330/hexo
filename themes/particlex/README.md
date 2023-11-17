@@ -1,14 +1,14 @@
 # Hexo-Theme-ParticleX
 
-[ParticleX](https://github.com/argvchs/hexo-theme-particlex) 主题，诞生原因是因为原来的 [Particle](https://github.com/korilin/hexo-theme-particle) 主题不维护了，但是我觉得还是很好的
+[ParticleX](https://github.com/theme-particlex/hexo-theme-particlex) 主题，诞生原因是因为原来的 [Particle](https://github.com/korilin/hexo-theme-particle) 主题不维护了，但是我觉得还是很好的。
 
-原来用的是 Vue 2 + Ant Design Vue 1，现更新到 Vue 3，去除 Ant Design Vue 采用自定义样式，图标更改为 Font Awesome 6，CDN 改为 Staticfile
+原来用的是 Vue 2 + Ant Design Vue 1，现更新到 Vue 3，去除 Ant Design Vue 采用自定义样式，图标更改为 Font Awesome 6，CDN 改为 Staticfile。
 
 原项目 `README.md` 里说：
 
-> 目前有 Full、Night 和 Maiden **两个**主题样式
+> 目前有 Full、Night 和 Maiden **两个**主题样式。
 
-虽然更改后只有一种了，如果你想改颜色就在 `main.css` 里替换吧
+但是更改后只有一种了，如果你想改颜色就在 `main.css` 里替换吧。
 
 # 1. 演示
 
@@ -20,10 +20,10 @@
 
 ```bash
 cd themes
-git clone https://github.com/argvchs/hexo-theme-particlex.git particlex --depth=1
+git clone https://github.com/theme-particlex/hexo-theme-particlex.git particlex --depth=1
 ```
 
-然后在根目录 `_config.yml` 设置主题为 ParticleX 即可
+然后在根目录 `_config.yml` 设置主题为 ParticleX 即可。
 
 ```yaml
 theme: particlex
@@ -31,7 +31,7 @@ theme: particlex
 
 ## 2.1. 关闭自带代码高亮
 
-Hexo 有自带的代码高亮，但是和 ParticleX 的不兼容
+Hexo 有自带的代码高亮，但是和 ParticleX 的不兼容。
 
 ```yaml
 highlight:
@@ -40,7 +40,7 @@ prismjs:
     enable: false
 ```
 
-如果使用 Pandoc 还需要设置一下
+如果使用 Pandoc 还需要设置一下：
 
 ```yaml
 pandoc:
@@ -50,7 +50,7 @@ pandoc:
 
 ## 2.2. 禁用年度月度归档
 
-Hexo 会自动生成年度月度归档，可是 ParticleX 主题没有这个功能 ~~我太懒了~~
+Hexo 会自动生成年度月度归档，可是 ParticleX 主题没有这个功能。~~我太懒了~~
 
 ```yaml
 archive_generator:
@@ -61,31 +61,39 @@ archive_generator:
     daily: false
 ```
 
-修改完请 `hexo cl` 清除缓存
+修改完请 `hexo cl` 清除缓存。
 
 # 3. 配置
 
 ## 3.1. 基本配置
 
-`background` 参数是一个列表，打开时会随机加载一个背景
+`background` 参数是一个列表，打开时会随机加载一个背景。
 
 ```yaml
 # Avatar image
 avatar: /images/avatar.jpg
 
-# Favicon
-favicon: /images/favicon.png
-
 # Home page background image
 background:
     - /images/background.jpg
+
+# Loading image
+loading: /images/loading.gif
+
+# Optional colors for category and tag
+colors:
+    - "#ffa2c4"
+    - "#00bcd4"
+    - "#03a9f4"
+    - "#00a596"
+    - "#ff7d73"
 ```
 
 ## 3.2. 内容配置
 
 ### 3.2.1. 导航栏
 
-为了方便，主题使用的图标是 Font Awesome 6 图标
+为了方便，主题使用的图标是 Font Awesome 6 图标。
 
 ```yaml
 # ParticleX theme icon is adopts the Font Awesome 6
@@ -117,9 +125,9 @@ menu:
 
 ### 3.2.2. 主页信息卡片
 
-`description` 支持 Markdown 格式
+`description` 支持 Markdown 格式。
 
-图标链接配置和导航栏配置相同
+图标链接 `iconLinks` 配置和导航栏配置相同。
 
 ```yaml
 # Side info card
@@ -135,9 +143,9 @@ card:
 
 ### 3.2.3. 页脚
 
-考虑到博客部署在服务器并使用自己域名的情况，按规定需要在网站下边添加备案消息
+考虑到博客部署在服务器并使用自己域名的情况，按规定需要在网站下边添加备案消息。
 
-如没有需要显示备案消息的可以关闭
+如没有需要显示备案消息的可以关闭。
 
 ```yaml
 # Footer info
@@ -154,9 +162,9 @@ footer:
 
 ### 3.3.1. Polyfill
 
-使用 [Polyfill.io](https://polyfill.io) 自动根据 UA 处理新的 JS API 兼容
+使用 [Polyfill.io](https://polyfill.io) 自动根据 UA 处理新的 JS API 兼容。
 
-可以配合 [Hexo-Babel](https://github.com/argvchs/hexo-babel) 插件处理 JS 语法兼容
+可以配合 [Hexo-Babel](https://github.com/theme-particlex/hexo-babel) 插件处理 JS 语法兼容。
 
 ```yaml
 # Polyfill
@@ -169,9 +177,9 @@ polyfill:
 
 ### 3.3.2. 代码高亮
 
-使用 Highlight.js 代码高亮
+使用 Highlight.js 代码高亮。
 
-样式可以在[这里](https://highlightjs.org/static/demo)选择，默认为 GitHub
+样式可以在[这里](https://highlightjs.org/static/demo)选择，默认为 GitHub。
 
 ```yaml
 # Highlight.js
@@ -183,7 +191,7 @@ highlight:
 
 ### 3.3.3. 数学渲染
 
-使用 KaTeX 渲染数学公式
+使用 KaTeX 渲染数学公式。
 
 ```yaml
 # KaTeX math rendering
@@ -193,7 +201,7 @@ math:
 
 ### 3.3.4. 图片预览
 
-简单的点击图片放大缩小的预览
+简单的点击图片放大缩小的预览。
 
 ```yaml
 # Image preview
@@ -203,11 +211,11 @@ preview:
 
 ### 3.3.5. 文章缩略
 
-一般来说，缩略展示文档只需要在文档中添加 `<!-- more -->` 即可，缩略内容在显示全文中也会出现
+一般来说，缩略展示文档只需要在文档中添加 `<!-- more -->` 即可，缩略内容在显示全文中也会出现。
 
-但考虑到不想把缩略内容放在正文里，就添加了此参数，在 [Front-Matter](https://hexo.io/zh-cn/docs/front-matter) 里设置
+但考虑到不想把缩略内容放在正文里，就添加了此参数，在 [Front-Matter](https://hexo.io/docs/front-matter) 里设置。
 
-支持 Markdown 格式
+支持 Markdown 格式。
 
 ```yaml
 description: |
@@ -216,11 +224,11 @@ description: |
 
 ### 3.3.6. 文章置顶
 
-在 [Front-Matter](https://hexo.io/zh-cn/docs/front-matter) 里设置 `pinned` 作为置顶参数，越大越靠前，默认为 0
+在 [Front-Matter](https://hexo.io/docs/front-matter) 里设置 `pinned` 作为置顶参数，越大越靠前，默认为 0。
 
 ### 3.3.7. 文章加密
 
-使用 AES 加密算法，在 [Front-Matter](https://hexo.io/zh-cn/docs/front-matter) 里设置 `secret` 作为密码，**使用请安装插件 [Hexo-Helper-Crypto](https://github.com/argvchs/hexo-helper-crypto)**
+使用 AES 加密算法，在 [Front-Matter](https://hexo.io/docs/front-matter) 里设置 `secret` 作为密码，**使用请安装插件 [Hexo-Helper-Crypto](https://github.com/theme-particlex/hexo-helper-crypto)**。
 
 ```yaml
 # Article encryption
@@ -230,9 +238,9 @@ crypto:
 
 ### 3.3.8. 搜索
 
-嵌入到 Archives 中的搜索
+嵌入到 Archives 中的搜索。
 
-目前只支持搜索文档标题
+目前只支持搜索文档标题。
 
 ```yaml
 # Search
@@ -244,9 +252,9 @@ search:
 
 ### 3.4.1. Giscus
 
-Giscus 是一个由 GitHub Discussions 支持的评论系统
+Giscus 是一个由 GitHub Discussions 支持的评论系统。
 
-在 [Giscus.app](https://giscus.app) 设置好各项后，会在下面生成一个 `<script>` 标签，在主题内填入即可
+在 [Giscus.app](https://giscus.app) 设置好各项后，会在下面生成一个 `<script>` 标签，在主题内填入即可。
 
 ```yaml
 # Giscus
@@ -264,14 +272,14 @@ giscus:
     emitMetadata: 0
     inputPosition: bottom
     theme: preferred_color_scheme
-    lang: zh-CN
+    lang:
 ```
 
 ### 3.4.2. Gitalk
 
-Gitalk 是一个基于 GitHub Issue 和 Preact 的评论系统
+Gitalk 是一个基于 GitHub Issue 和 Preact 的评论系统。
 
-由于 Gitalk 官方 CORS 代理用的是 Cloudflare，速度过慢，搭建 CORS 代理可以看[这篇文章](https://argvchs.github.io/2022/07/04/build-cors-anywhere)
+由于 Gitalk 官方 CORS 代理用的是 Cloudflare，速度过慢，搭建 CORS 代理可以看[这篇文章](https://argvchs.github.io/2022/07/04/build-cors-anywhere)。
 
 ```yaml
 # Gitalk
@@ -283,13 +291,13 @@ gitalk:
     repo: # The name of repository of store comments
     owner: # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize github issues
-    language: zh-CN # en, zh-CN, zh-TW, es-ES, fr, ru, de, pl and ko are currently available
+    language: # en, zh-CN, zh-TW, es-ES, fr, ru, de, pl and ko are currently available
     proxy: # CORS proxy
 ```
 
 ### 3.4.3. Waline
 
-Waline 是一个简单、安全的评论系统
+Waline 是一个简单、安全的评论系统。
 
 详见：[在 ParticleX 上使用 Waline | Yuzi's Blog](https://blog.yuzi.dev/posts/bcb4ff00.html)
 
@@ -315,7 +323,7 @@ waline:
         - link
     requiredMeta: # Set required meta field, e.g.: [nick] | [nick, mail]
         - nick
-    lang: zh-CN # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
+    lang: # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
     wordLimit: 0 # Word limit, no limit when setting to 0
     login: enable # Whether enable login, can choose from 'enable', 'disable' and 'force'
     pageSize: 10 # Comment per page
@@ -323,7 +331,7 @@ waline:
 
 ### 3.4.4. Twikoo
 
-Twikoo 是一个一个简洁、安全、免费的静态网站评论系统
+Twikoo 是一个一个简洁、安全、免费的静态网站评论系统。
 
 ```yaml
 # Twikoo
@@ -333,7 +341,7 @@ twikoo:
     envID:
     region:
     path: location.pathname
-    lang: zh-CN
+    lang:
 ```
 
 # 4. 写在最后

@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   hexo-helper-crypto:
-    specifier: ^1.1.2
-    version: 1.1.2
+    specifier: ^1.1.5
+    version: 1.1.5
   hexo-renderer-ejs:
     specifier: ^2.0.0
     version: 2.0.0
@@ -61,8 +65,8 @@ packages:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: false
 
-  /crypto-js@4.1.1:
-    resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==}
+  /crypto-js@4.2.0:
+    resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
     dev: false
 
   /ejs@3.1.9:
@@ -70,7 +74,7 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
     dependencies:
-      jake: 10.8.5
+      jake: 10.8.7
     dev: false
 
   /filelist@1.0.4:
@@ -84,10 +88,10 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /hexo-helper-crypto@1.1.2:
-    resolution: {integrity: sha512-wRduyeWAjOeiK3zcCjvyxW3KGIJekZ8AxWSHXhyvqWN4NreJKFgknFRCpImTgqZR1VMc0LqTLW3C/jmX5Xd7Hg==}
+  /hexo-helper-crypto@1.1.5:
+    resolution: {integrity: sha512-KfrpsBv5SoMLNXVtGjPklyFaHP3Jb0SdALSRyhkJ1TFFIl95dH2Pa6M4Dam5xNDo44fmLrEzm/VHrM5AXJMFEA==}
     dependencies:
-      crypto-js: 4.1.1
+      crypto-js: 4.2.0
     dev: false
 
   /hexo-renderer-ejs@2.0.0:
@@ -97,8 +101,8 @@ packages:
       ejs: 3.1.9
     dev: false
 
-  /jake@10.8.5:
-    resolution: {integrity: sha512-sVpxYeuAhWt0OTWITwT98oyV0GsXyMlXCF+3L1SuafBVUIr/uILGRB+NqwkzhgXKvoJpDIpQvqkUALgdmQsQxw==}
+  /jake@10.8.7:
+    resolution: {integrity: sha512-ZDi3aP+fG/LchyBzUM804VjddnwfSfsdeYkwt8NcbKRvo4rFkjhs456iLFn3k2ZUWvNe4i48WACDbza8fhq2+w==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
